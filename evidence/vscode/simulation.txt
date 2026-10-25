@@ -1,0 +1,9 @@
+[1] PASS 로그
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\fpga\sram\build\sim\run-ba92802f39ac4dc49a244e997b34aa46\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+PASS SRAM: 16 addresses, bus release, simultaneous request
+C:\Users\sumin\fpga\sram\sim\tb_sram.sv:43: $finish called at 164000 (1ps)
+
+시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
+WAVE C:\Users\sumin\fpga\sram\build\sim\wave.vcd
+ *  Terminal will be reused by tasks, press any key to close it. 

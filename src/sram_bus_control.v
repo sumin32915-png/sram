@@ -6,7 +6,7 @@ module sram_bus_control(
     output wire drive_data,read_data,
     output wire ram_cs,ram_oe,ram_we
 );
-    assign drive_data=ctrl_w;
+    assign drive_data=ctrl_w && !ctrl_r;
     assign read_data=ctrl_r && !ctrl_w;
     assign ram_cs=!(drive_data || read_data);
     assign ram_oe=!read_data;
